@@ -35,7 +35,7 @@ const UseRef = () => {
 
   return (
     <div>
-      <p>Use Ref</p>
+      <h3>Use Ref</h3>
       <div>
         <input
           type="text"

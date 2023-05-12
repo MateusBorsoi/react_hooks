@@ -5,6 +5,7 @@ import UseState from '../../routes/UseState';
 import UseEffect from '../../routes/UseEffect'
 import AtvuseEffect from '../../routes/Atv_useEffect';
 import UseRef from '../../routes/UseRef'
+import UseMemo from '../../routes/UseMemo';
 const Content = () => {
   return (
     <div className="content">
@@ -14,6 +15,7 @@ const Content = () => {
         <Route path="/UseEffect" element={<UseEffect />}></Route>
         <Route path="Atv_useEffect" element={<AtvuseEffect/>}></Route>
         <Route path="UseRef" element={<UseRef/>}></Route>
+        <Route path="UseMemo" element={<UseMemo/>}></Route>
       </Routes>
     </div>
   );

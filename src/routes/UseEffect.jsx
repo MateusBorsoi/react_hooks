@@ -23,7 +23,7 @@ const UseEffect = () => {
 
   return (
     <div>
-      <p>Use Effect</p>
+      <h3>Use Effect</h3>
       <div>
         <span className="text">Fatorial: {fatorial < 0 ? 'Não Existe' : fatorial} </span>
       </div>

@@ -15,7 +15,7 @@ const AtvuseEffect = () => {
 
   return (
     <div>
-      <p>Atividade Use Effect</p>
+      <h3>Atividade Use Effect</h3>
       <div>
         <span className="text">Status: {status && status}</span>
       </div>

@@ -16,7 +16,7 @@ export default function UseState() {
 
   return (
     <div className="componente">
-      <p>Use State</p>
+      <h3>Use State</h3>
       <p>{count}</p>
       <div className="buttons">
         <Button variant="contained" disableElevation onClick={Incrementar} className="button">
