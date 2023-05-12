@@ -4,6 +4,7 @@ import "./UseMemo.css";
 const UseMemo = () => {
   const sum = (vlr1, vlr2) => {
     const delay = Date.now() + 500;
+
     while (Date.now() < delay) {
       //
     }

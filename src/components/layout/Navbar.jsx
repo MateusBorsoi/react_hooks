@@ -12,6 +12,8 @@ const Navbar = () => {
                     <Link to ="/Atv_useEffect">Atv UseEffect</Link>
                     <Link to ="/UseRef">UseRef()</Link>
                     <Link to ="/UseMemo">UseMemo()</Link>
+                    <Link to ="/UseCallback">UseCallback()</Link>
+                    <Link to ="/UseContext">UseContext()</Link>
                 </li>
             </ul>
         </div>
