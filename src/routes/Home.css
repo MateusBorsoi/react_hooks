@@ -1,0 +1,20 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.texto {
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #808B96;
+    color: black;
+    
+}
