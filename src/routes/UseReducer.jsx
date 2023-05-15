@@ -2,32 +2,10 @@ import { Button, TextField } from "@mui/material";
 import { useReducer } from "react";
 import "./UseReducer.css";
 import { useState } from "react";
+import { initialState } from "../store";
+import reducer from "../store/reducers";
 
-const initialState = {
-  cart: [],
-  products: [],
-  user: null,
-  number: 0,
-};
 
-function reducer(state, action) {
-  switch (action.type) {
-    case "numberAdd2":
-      return { ...state, number: state.number + 2 };
-    case "login":
-      return { ...state, user: { name: action.payload } };
-    case "mult7":
-      return { ...state, number: state.number * 7 };
-    case "div25":
-      return { ...state, number: state.number / 25 };
-    case "parse":
-      return { ...state, number: parseFloat(state.number) };
-    case "nameAdd":
-      return { ...state, user: { name: action.payload } };
-    default:
-      return state;
-  }
-}
 
 const UseReducer = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -89,10 +67,28 @@ const UseReducer = () => {
           variant="contained"
           disableElevation
           className="button"
-          onClick={() => dispatch({ type: "div25", number: 35 })}
+          onClick={() => dispatch({ type: "div25" })}
         >
           Parse
         </Button>
+        <Button
+          variant="contained"
+          disableElevation
+          className="button"
+          onClick={() => dispatch({ type: "rem9", payload: 25 })}
+        >
+          - 9
+        </Button>
+
+        <Button
+          variant="contained"
+          disableElevation
+          className="button"
+          onClick={() => dispatch({ type: "add11", payload: 50 })}
+        >
+          + 11
+        </Button>
+
         <TextField
           id="outlined-basic"
           label="Nome"

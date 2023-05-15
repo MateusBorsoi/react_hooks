@@ -15,6 +15,7 @@ const Navbar = () => {
                     <Link to ="/UseCallback">UseCallback()</Link>
                     <Link to ="/UseContext">UseContext()</Link>
                     <Link to ="/UseReducer">UseReducer()</Link>
+                    <Link to ="/UseCustom">UseCustom()</Link>
                 </li>
             </ul>
         </div>
