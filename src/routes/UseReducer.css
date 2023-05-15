@@ -1,0 +1,13 @@
+.button{
+    margin-top: 5px !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+}
+
+.texto{
+    margin: 10px !important;
+}

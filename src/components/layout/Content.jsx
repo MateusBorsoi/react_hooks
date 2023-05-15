@@ -8,6 +8,7 @@ import UseRef from "../../routes/UseRef";
 import UseMemo from "../../routes/UseMemo";
 import UseCallback from "../../routes/UseCallback";
 import UseContext from "../../routes/UseContext";
+import UseReducer from "../../routes/UseReducer";
 const Content = () => {
   return (
     <div className="content">
@@ -20,7 +21,8 @@ const Content = () => {
         <Route path="UseMemo" element={<UseMemo />}></Route>
         <Route path="UseCallback" element={<UseCallback />}></Route>
         <Route path="UseContext" element={<UseContext />}></Route>
-      </Routes>
+        <Route path="UseReducer" element={<UseReducer/>}></Route>
+       </Routes>
     </div>
   );
 };
