@@ -41,7 +41,7 @@ const UseCustom = () => {
       </div>
       <div>
         <span>Use Fetch</span>
-        <ul>{response.data ? showStates(response.data) : false}</ul>
+        <ul>{!response.loading ? showStates(response.data) : false}</ul>
       </div>
     </div>
   );
