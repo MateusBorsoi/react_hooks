@@ -1,14 +1,26 @@
 import { Button } from "@mui/material";
 import { useCounter } from "../hooks/useCounter";
-import './useCustom.css'
+import "./UseCustom.css";
+import { useFetch } from "../hooks/useFetch";
 
 const UseCustom = () => {
   const [count, inc, dec] = useCounter();
+  const url = "http://files.cod3r.com.br/curso-react/estados.json";
+  const response = useFetch(url);
+
+  function showStates(states) {
+    return states.map((state) => (
+      <li key={state.nome}>
+        {state.nome} - {state.sigla}{" "}
+      </li>
+    ));
+  }
 
   return (
-    <did>
+    <div>
       <h3>Use Custom</h3>
-      <div className="content">
+      <div className="itens">
+        <span>Use Counter</span>
         <span>{count}</span>
         <Button
           variant="contained"
@@ -16,7 +28,7 @@ const UseCustom = () => {
           className="button"
           onClick={() => inc()}
         >
-          Inc
+          Inc +
         </Button>
         <Button
           variant="contained"
@@ -24,10 +36,14 @@ const UseCustom = () => {
           className="button"
           onClick={() => dec()}
         >
-          Dec
+          Dec -
         </Button>
       </div>
-    </did>
+      <div>
+        <span>Use Fetch</span>
+        <ul>{response.data ? showStates(response.data) : false}</ul>
+      </div>
+    </div>
   );
 };
 
